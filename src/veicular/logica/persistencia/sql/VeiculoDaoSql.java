@@ -28,7 +28,7 @@ public class VeiculoDaoSql extends DBDAO implements VeiculoDaoIF{
 	@Override
 	public void salvar(Veiculo veiculo) throws Exception {
 		
-		Veiculo v = this.findByNome(veiculo.getPlaca());
+		Veiculo v = this.findByPlaca(veiculo.getPlaca());
 		
 		if(veiculo == null)
 			this.create(v);
@@ -72,7 +72,7 @@ public class VeiculoDaoSql extends DBDAO implements VeiculoDaoIF{
 	}
 
 	@Override
-	public Veiculo findByNome(String descricao) throws ClassNotFoundException, SQLException {
+	public Veiculo findByPlaca(String descricao) throws ClassNotFoundException, SQLException {
 		Connection conn = this.getConnection();
 		PreparedStatement pstam = conn.prepareStatement(FINDBYNOME);
 		pstam.setString(1, descricao);

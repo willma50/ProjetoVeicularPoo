@@ -1,6 +1,6 @@
 package veicular.ui;
 
-import veicular.logica.dominio.VeiculoAppIF;
+import veicular.logica.app.VeiculoAppIF;
 
 
 public interface VeiculoUIIF {

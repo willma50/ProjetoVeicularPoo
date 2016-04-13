@@ -19,8 +19,8 @@ import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JToolBar;
 
+import veicular.logica.app.VeiculoAppIF;
 import veicular.logica.dominio.Veiculo;
-import veicular.logica.dominio.VeiculoAppIF;
 
 
 public class ListarVeiculo extends JFrame implements VeiculoUIIF{

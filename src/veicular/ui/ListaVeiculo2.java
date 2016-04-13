@@ -15,8 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
+import veicular.logica.app.VeiculoAppIF;
 import veicular.logica.dominio.Veiculo;
-import veicular.logica.dominio.VeiculoAppIF;
 
 
 public class ListaVeiculo2 extends JFrame implements VeiculoUIIF{

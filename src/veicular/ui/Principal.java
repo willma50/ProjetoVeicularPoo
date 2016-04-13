@@ -14,7 +14,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import veicular.logica.dominio.VeiculoAppIF;
+import veicular.logica.app.VeiculoAppIF;
 
 
 

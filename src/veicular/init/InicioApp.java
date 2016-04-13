@@ -1,38 +1,16 @@
-package veicular.logica.app;
+package veicular.init;
 
 
 import java.io.FileReader;
-import java.security.Principal;
-import java.sql.SQLException;
 import java.util.Properties;
 
-
-
-
-import veicular.logica.dominio.VeiculoAppIF;
-import veicular.logica.dominio.VeiculoGestor;
+import veicular.logica.app.VeiculoAppIF;
 import veicular.logica.persistencia.sql.VeiculoDaoIF;
 import veicular.ui.VeiculoUIIF;
 
 
-public class appTeste {
-	
-	private VeiculoAppIF gestor;
-	private Principal app;
+public class InicioApp {
 
-	public appTeste(){
-		this.gestor = new VeiculoGestor();					
-	}
-	
-	public void cenario1() throws Exception{
-		//this.gestor.addVeiculo("SIENA", 2, "MGE-3654", 2006);
-		
-	}
-	
-	public void cenario2() throws Exception{
-		
-		//this.app = new Principal();
-	}
 	
 	   public void run(String fileName) throws Exception{
 	    	Properties prop = new Properties();
@@ -62,8 +40,8 @@ public class appTeste {
 		//appTeste app = new appTeste();
 		//app.cenario1();
 		//app.cenario2();
-		appTeste app = new appTeste();
-    	app.run("config.app");
-		//teste
+		(new InicioApp()).run("config.app");
+		InicioApp app = new InicioApp();
+  
 	}
 }

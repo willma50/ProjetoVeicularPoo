@@ -1,8 +1,9 @@
-package veicular.logica.dominio;
+package veicular.logica.app;
 
 
 import java.util.Collection;
 
+import veicular.logica.dominio.Veiculo;
 import veicular.logica.persistencia.sql.VeiculoDaoIF;
 
 
